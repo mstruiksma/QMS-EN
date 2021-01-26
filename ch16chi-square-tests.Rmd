@@ -1,4 +1,4 @@
-# Chi-square-tests {#ch:chi-square-tests}
+# Chi-square tests {#ch:chi-square-tests}
 
 ## Introduction {#sec:ch16introduction}
 
@@ -17,13 +17,13 @@ has less power than a parametric test when seeking out an effect
 (see Chapter \@ref(ch:power)).
 
 In this Chapter, we discuss the most used non-parametric
-test: the so-called $\chi^2$-test, pronounced as "chi-square-test" (with the greek letter "chi"). 
+test: the so-called $\chi^2$ test, pronounced as "chi-square test" (with the greek letter "chi"). 
 
 
 ## $\chi^2$-test for "goodness of fit" in single sample {#sec:chi2gof}
 
 Data of nominal level of measurement are often analysed with the 
-$\chi^2$-test. The number of dots on a dice
+$\chi^2$ test. The number of dots on a dice
 is an example of a dependent variable of nominal level of measurement:
 there is no ordering between the six sides, and each side of a die has
 an equally high probability of appearing on the top. Imagine we throw
@@ -35,19 +35,19 @@ be seen as a contingency table of 1 row and 6
 columns (i.e. 6 cells). How high is the probability of this distribution
 of outcomes? Is the die indeed honest?
 
-The $\chi^2$-test is based on the differences between the expected
+The $\chi^2$ test is based on the differences between the expected
 and observed frequencies. According to the null hypothesis (the die is honest),
 we expect 10 outcomes in each cell ($60/6=10$), i.e. the 
 expected frequency is identical for each cell (this is called
 a *uniform* distribution).
 The observed outcomes deviate from the expected frequencies of outcomes, 
 in particular because the outcome "six" barely occurs in this sample. This
-might of course also be chance. The $\chi^2$-test indicates how high the probability
+might of course also be chance. The $\chi^2$ test indicates how high the probability
 is of this "skewed" distribution of outcomes (or an even more skewed distribution),
 if H0 is true.
 The expected outcomes are thus deduced from a distribution of the outcomes
 according to H0, and we investigate how well the observed outcomes 
-fit the expected outcomes. This form of the $\chi^2$-test is thus also 
+fit the expected outcomes. This form of the $\chi^2$ test is thus also 
 referred to as a test of the 'goodness of fit'.
 
 For this example, we find the outcome of the testing $\chi^2=12.44$
@@ -67,7 +67,7 @@ distribution according to H0.
 
 ## $\chi^2$-test for homogeneity of a variable in multiple samples
 
-The $\chi^2$-test can also be used for a research design with *one* nominal
+The $\chi^2$ test can also be used for a research design with *one* nominal
 variable which we have observed in two or more samples. The
 question is then whether the distribution of the observations over the
 categories is equal for the different samples. This test is comparable with
@@ -78,7 +78,7 @@ and multiple columns for the categories of the
 nominal dependent variable (see also
 Table \@ref(tab:cito-contingency-table)).
 
-The $\chi^2$-test is again based on the differences between the expected and
+The $\chi^2$ test is again based on the differences between the expected and
 observed frequencies. According to the null hypothesis (there is no difference
 in distribution between the two samples), the distribution of observations
 across the columns should be approximately equal for all rows 
@@ -86,7 +86,7 @@ across the columns should be approximately equal for all rows
 
 ## $\chi^2$-test for association between two variables in single sample
 
-Finally, the $\chi^2$-test can equally well be used for a research design
+Finally, the $\chi^2$ test can equally well be used for a research design
 with *two* nominal variables, which we have observed in a single 
 sample. The question then is whether the distribution of observations
 over the second variable's categories is equal for the different
@@ -95,7 +95,7 @@ the numbers of observations in a contingency table with multiple rows for
 the categories of the first nominal variable, and multiple columns
 for the categories of the second nominal variable.
 
-Here too, the $\chi^2$-test is based on the differences between the expected and
+Here too, the $\chi^2$ test is based on the differences between the expected and
 observed frequencies. According to the null hypothesis (that there is no association
 between the two nominal variables), the distribution of observations across
 rows should be approximately equal for all columns, and vice versa. However, this
@@ -151,7 +151,7 @@ Reread and remember the warnings about correlation and causality
 
 ## assumptions {#sec:chi2test-assumptions}
 
-The $\chi^2$-test requires three assumptions which must be satisfied
+The $\chi^2$ test requires three assumptions which must be satisfied
 in order to use the test.
 
 * The data have to be measured on a nominal level of measurement, or have
@@ -190,9 +190,9 @@ statistic $\chi^2$ is always null or positive, and never negative
 The probability distribution of the test statistic $\chi^2$ is determined by
 the number of degrees of freedom (see
 §\@ref(sec:ttest-freedomdegrees) for explanation of this concept).
-For a $\chi^2$-test with one nominal variable ("goodness of fit"), the number
+For a $\chi^2$ test with one nominal variable ("goodness of fit"), the number
 of degrees of freedom must be equal to the number of cells minus 1. For a 
-$\chi^2$-test with multiple samples (homogeneity) and/or with two variables
+$\chi^2$ test with multiple samples (homogeneity) and/or with two variables
 (correlations), with respectively $k$ and $m$ categories, the number of
 degrees of freedom is equal to $(k-1)\times(m-1)$.
 
@@ -326,7 +326,7 @@ chisq.test( Titanic.classoutcome )  # p<.0001
 
 ## Effect size: odds ratio
 
-When using the $\chi^2$-test, the effect size can be reported in the form
+When using the $\chi^2$ test, the effect size can be reported in the form
 of the so-called "odds ratio". The 'odds ratio' is derived from the contingency
 table with frequencies per cell. We will explain all these matters
 using the following example.
